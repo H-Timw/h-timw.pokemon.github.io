@@ -1,0 +1,186 @@
+:root{
+  --dark-green: #369143;
+  --red: #E3350D;
+  --orange: #F3F3F3;
+  --yellow: #E6BC2F;
+  --light-green: #4DAD5B;
+  --light-blue: #30A7D7;
+  --dark-blue: #1B53BA;
+  --gray: #919191;
+  --white: #FFFFFF;
+}
+@import url(//db.onlinewebfonts.com/c/51ba22ae06790efd464bde752a2cd9d1?family=Flexo);
+@font-face {
+  font-family: "icons";
+  src:url("../fonts/icons.woff?456e640c93ca1d54e86948898799edfa") format("woff");
+  font-weight: normal;
+  font-style: normal
+}
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html{
+  font-family: "Flexo-Regular",arial,sans-serif;
+  font-size: 62.5%;
+  color: var(--white);
+  background-color: var(--white);
+}
+body{
+  position: relative;
+  width: 100%;
+  background: url(/imgs/Icon-logo/body_bg.png);
+  height: 300rem;
+}
+header{
+  width: 100%;
+  background-color: #F5F5F5;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  height: 7rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all ease-in-out;
+}
+.header{
+  width: 91rem;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header a{
+  display: inline-block;
+  height: 7rem;
+  margin-right: 0.5rem;
+}
+.header a:hover{  border: 1px solid var(--gray);}
+.header a img{
+  padding: 1rem;
+} 
+.header a:first-child{
+  padding: 1rem;
+  background-color: #FFFFFF;
+  border: none !important;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3),
+              -5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.sticky{
+  position: sticky;
+  top: -4rem;
+}
+nav{
+
+  position: sticky;
+  top: 7rem;
+  width: 100%;
+  background-color: #FFFFFF;
+  z-index: 1;
+}
+.nav{
+  width: 91rem;
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  inset: 0 0 -5px 0;
+}
+.nav a{
+  display: block;
+  width: 13rem;
+  color: var(--gray);
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  text-align:center;
+}
+.title{
+  line-height: 2rem;
+  padding: 1rem;
+}
+.nav a:first-child{
+  background-color: var(--gray);
+  border-bottom: 5px solid var(--gray);
+  color: var(--white);
+}
+.icon{
+  font-size: 3rem;
+  font-family: "icons";
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  display: inline;
+  padding: 1rem;
+}
+.icon-home::before{content: "\f11f";}
+.icon-pokedex::before{content: "\f12a";}
+.icon-game::before{content: "\f121";}
+.icon-trading::before{content: "\f109";}
+.icon-poketv::before{content: "\f12c";}
+.icon-event::before{content: "\f112";}
+.icon-news::before{content: "\f138";}
+.nav a:nth-child(2){border-bottom: 5px solid var(--red);}
+nav a:nth-child(2):hover{
+  background-color: var(--red);
+  color: var(--white);
+}
+.nav a:nth-child(3){
+  border-bottom: 5px solid var(--yellow);
+}
+nav a:nth-child(3):hover{
+  background-color: var(--yellow);
+  color: var(--white);
+}
+.nav a:nth-child(4){
+  border-bottom: 5px solid var(--light-green);
+}
+nav a:nth-child(4):hover{
+  background-color: var(--light-green);
+  color: var(--white);
+}
+.nav a:nth-child(5){
+  border-bottom: 5px solid var(--dark-green);
+}
+nav a:nth-child(5):hover{
+  background-color: var(--dark-green);
+  color: var(--white);
+}
+.nav a:nth-child(6){
+  border-bottom: 5px solid var(--light-blue);
+}
+nav a:nth-child(6):hover{
+  background-color: var(--light-blue);
+  color: var(--white);
+}
+.nav a:nth-child(7){
+  border-bottom: 5px solid var(--dark-blue);
+}
+nav a:nth-child(7):hover{
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+.blogs{
+  height: 95rem;
+}
+
+div.container{
+  margin: auto;
+  width: 128rem;
+  background:#FFFFFF url(/imgs/Icon-logo/container_bg.png);
+}
+section.contents{
+  margin: auto;
+  width: 91rem;
+  background: #FFFFFF url(/imgs/Icon-logo/content_bg.png);
+}
